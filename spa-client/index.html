@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Family Chores</title>
 </head>
 <body>
-    Hello World
+    <div id='family-function-header'>
+            <h1>Chore Organizer</h1>
+    </div>
+    <br>
+    <h3 id='tag-line'>Keep your family chores organized.</h3>
+
+    <div class="family-selector">
+        <form class="select-family-form" style="">
+            <h3>Select Your Family</h3>
+        <select id="family-select">
+
+        </select>
+        <input type="submit" name="submit" value="See Your House's Chores" class="submit">
+    </form>
+    </div>
+    <button id="all-house-options"></button>
+
+
+
+    <div class="container">
+        <form class="add-chore-form" style="">
+            <h3> Add a Chore to your To-Do List</h3>
+
+            <input type="text" name="name" value="" placeholder="Enter a chore's name..." class="input-text">
+           
+            <select id="select">
+                
+            </select>
+
+            <input type="submit" name="submit" value="Save Chore" class="submit">
+        
+        </form>
+    </div>
+    <br>
+    <br>
+    <button id='new-chore-btn' style='text-align:center'></button></p>
+    
+    
+    <div id='house-pop-up'>
+        <form class="add-house-hold-form" style="">
+                <h3>Create new House Hold</h3>
+                <label for="house-hold">House Hold Name:</label>
+                <br>
+                <input type="text" name="name" value="" placeholder="Last name..." class="house-hold-input-text">
+                <br>
+                <br>
+                <label for="members">House Hold Members:</label>
+                <br>
+                <input type="text" name="members" value="" placeholder="First name(s)..." class="house-members-input-text">
+                <br>
+                <br>
+                <input class="submit-form" type="submit" name="submit" value="Save House Hold" class="submit">
+            </form>
+        </div>
+        
+        <button id="add-new-family"></button>
+
+    <div id="chore-collection">
+       <h2 id='family-chore-list'>House Hold Chores:</h2>
+    </div>
+
+    <script src="javascripts/globals.js"></script>
+    <script src="javascripts/models/chore.js"></script>
+    <script src="javascripts/models/houseHold.js"></script>
+    <script src="javascripts/service/api.js"></script>
+    <script src="javascripts/index.js"></script>
 </body>
 </html>
