@@ -57,6 +57,14 @@ class Chore {
             resetBtn.setAttribute('class', 'reset-chore-button')
             resetBtn.innerText = 'Reset'
 
+            resetBtn.addEventListener('click', event => this.resetHandler(event, this))
+            
+            if (p.innerHTML === 'Incomplete'){
+                p.style.color = 'red'
+                resetBtn.style.display = 'none'
+            } else {
+                p.style.color = 'green'
+                completeBtn.style.display = 'none'
+            }
         }
     }
-    
