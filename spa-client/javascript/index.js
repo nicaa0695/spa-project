@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('started')
+document.addEventListener('DOMContentLoaded', 
+() => {
+    console.log('index.js is loaded...')
 });
