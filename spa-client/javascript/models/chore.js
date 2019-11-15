@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', 
+() => {
+    console.log('chore.js is loaded...')
+});
+
 class Chore {
     static all = []
 
