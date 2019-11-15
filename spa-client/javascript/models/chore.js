@@ -48,6 +48,15 @@ class Chore {
             p.setAttribute('class', 'chore-status')
             p.innerHTML = `${this.status}`
 
+            let completeBtn = document.createElement('button')
+            completeBtn.setAttribute('class', 'complete-btn')
+            completeBtn.innerText = 'Complete!'
+            completeBtn.addEventListener('click', event => this.completeChoreHandler(event, this))
+            
+            let resetBtn = document.createElement('button')
+            resetBtn.setAttribute('class', 'reset-chore-button')
+            resetBtn.innerText = 'Reset'
 
         }
     }
+    
