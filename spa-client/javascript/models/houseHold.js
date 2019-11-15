@@ -57,4 +57,16 @@ class HouseHold {
             .then(HouseHold.renderHouseHolds)
 
     }
+
+    static renderDropDownOptions(){
+        HouseHold.all.forEach(houseHold => {
+            let option = document.createElement('option')
+            option.setAttribute('value', houseHold.id)
+            let house_name = document.createTextNode(houseHold.name)
+            option.appendChild(house_name)
+            selectHouseHold.appendChild(option)
+        })
+        
+
+    }
 }
