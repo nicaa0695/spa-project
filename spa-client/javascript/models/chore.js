@@ -84,5 +84,28 @@ class Chore {
             choreCollection.append(divCard)
         }
         
+        static renderChores(chores) {
+
+            chores.forEach(choreObj => {
+                let newObj = new Chore(choreObj.name, choreObj.status, choreObj.id)
+                newObj.render()
+            })
         }
+
+        ///when rendering chores 'sort' the chore A-Z
+
+
+        deleteChoreHandler() {
+            event.preventDefault()
+            fetch(`${Api.CHORES_URL}/${this.id}`,{
+                method: 'DELETE'
+            })
+            .then(() => { 
+                document.getElementById(`${this.id}`).remove()
+                Chore.all = Chore.all.filter(chore => chore.id !== this.id)
+            })
+        }
+
+        
+    }
     
