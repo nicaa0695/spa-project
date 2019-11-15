@@ -77,3 +77,19 @@ addBtn.addEventListener('click', () => {
     }
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+    Api.fetchHouseHolds().then(houseHolds => {
+        houseHolds.forEach(houseHold => {
+            let hh = new HouseHold(houseHold.name, houseHold.members, houseHold.id)
+            houseHold.chores.forEach(chore => {
+            hh.addChore(chore)
+            })
+        })
+    HouseHold.renderHouseHolds()
+    HouseHold.renderDropDownOptions()
+    })
+    addBtn.textContent = 'Add a New Chore'
+    addHouseHoldBtn.textContent = "Add a New House Hold"
+    selectHouseHoldBtn.textContent = 'Select Your House Hold'
+})
+
