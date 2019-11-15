@@ -71,5 +71,18 @@ class Chore {
                 p.style.color = 'green'
                 completeBtn.style.display = 'none'
             }
+
+            let deleteBtn = document.createElement('button')
+            deleteBtn.setAttribute('class', 'delete-chore-btn')
+            deleteBtn.innerText = 'Delete'
+            deleteBtn.addEventListener('click', event => this.deleteChoreHandler(event, this))
+
+            let divCard = document.createElement('div')
+            divCard.setAttribute('class', 'card')
+            divCard.setAttribute('id', `${this.id}`)
+            divCard.append(h2, h3, p, completeBtn, resetBtn, deleteBtn)
+            choreCollection.append(divCard)
         }
-    }
+        
+        }
+    

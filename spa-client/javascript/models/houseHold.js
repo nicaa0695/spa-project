@@ -69,4 +69,13 @@ class HouseHold {
         
 
     }
+
+    static renderHouseHolds(){
+        HouseHold.all.forEach(houseHold => {
+            let option = document.createElement("option")
+            option.value = houseHold.id
+            option.textContent = houseHold.name
+            select.appendChild(option)
+        })
+    }
 }
