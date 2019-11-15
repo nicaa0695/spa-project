@@ -37,3 +37,24 @@ addHouseHoldBtn.addEventListener('click', () => {
         housePopUp.style.display = 'none'
     }
 })
+
+selectHouseHoldBtn.addEventListener('click', () => {
+    selectHouse = !selectHouse
+    if(selectHouse) {
+        selectHouseHoldBtn.textContent= 'Close'
+        selectForm.style.display = 'block'
+        selectForm.addEventListener('submit', e => {
+            e.preventDefault()
+            let familyId = e.target.querySelector('#family-select').value
+            
+            let chosenFamily = HouseHold.all.find(chosenFamily => familyId == chosenFamily.id)
+            clearChoreDivs()
+            
+            chosenFamily.renderChores()
+        })
+    } else {
+        selectHouseHoldBtn.textContent = "Select Your Family"
+        selectForm.style.display = 'none'
+    }
+})
+
