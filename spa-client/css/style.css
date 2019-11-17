@@ -3,7 +3,7 @@ html {
   }
 
   body {
-      background-image: linear-gradient(to right, red, rgb(105, 2, 2));
+      background-image: linear-gradient(to right, red, rgb(148, 9, 9));
   }
 
   .container {
@@ -27,7 +27,7 @@ html {
     display: none;
     background: white;
     opacity: .8;
-    box-shadow: 3px 4px red;
+    box-shadow: 3px 4px black;
     margin: 1rem 2rem;
     text-shadow: 1px .5px white;
     color: black;
@@ -48,3 +48,17 @@ html {
     color: black;
     font-family: Georgia, serif;
    }
+
+   .card {
+    border-radius: 15px 40px;
+    text-align: center;
+    border: grey solid 2px;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px black;
+    background-color: white;
+    font-family: Georgia, serif;
+  }
