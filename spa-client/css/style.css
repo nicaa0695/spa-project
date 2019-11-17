@@ -14,7 +14,37 @@ html {
     background: white;
     opacity: .8;
     margin: 1rem 2rem;
-    text-shadow: 1px .5px grey;
+    text-shadow: 1px .5px white;
     color: black;
     font-family: Georgia, serif;
   }
+
+  #house-pop-up {
+    border-radius: 6px 16px;
+    padding: 1rem;
+    width: 420px;
+    height: auto;
+    display: none;
+    background: white;
+    opacity: .8;
+    box-shadow: 3px 4px red;
+    margin: 1rem 2rem;
+    text-shadow: 1px .5px white;
+    color: black;
+    font-family: Georgia, serif;
+   } 
+
+   .family-selector {
+    border-radius: 6px 16px;
+    padding: 1rem;
+    width: 420px;
+    height: auto;
+    display: none;
+    background: white;
+    opacity: .8;
+    box-shadow: 3px 4px black;
+    margin: 1rem 2rem;
+    text-shadow: .5px .5px white;
+    color: black;
+    font-family: Georgia, serif;
+   }
