@@ -4,11 +4,10 @@ html {
   }
 
   body {
-      background-image: linear-gradient(to right, red, rgb(148, 9, 9));
+      background-image: linear-gradient(to right, rgb(0, 255, 170), rgb(236, 232, 232));
   }
 
   .container {
-    position: absolute
     text-align: center;
     box-shadow: 3px 4px rgb(2, 16, 22);
     border-radius: 6px 16px;
@@ -55,7 +54,6 @@ html {
    }
 
    .card {
-    
     border-radius: 15px 40px;
     text-align: center;
     border: white solid 5px;
