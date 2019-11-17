@@ -1,5 +1,6 @@
 html {
-    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    font-family: monospace;
   }
 
   body {
@@ -7,6 +8,8 @@ html {
   }
 
   .container {
+    position: absolute
+    text-align: center;
     box-shadow: 3px 4px rgb(2, 16, 22);
     border-radius: 6px 16px;
     padding: 1rem;
@@ -16,10 +19,11 @@ html {
     margin: 1rem 2rem;
     text-shadow: 1px .5px white;
     color: black;
-    font-family: Georgia, serif;
+    font-family: monospace;
   }
 
   #house-pop-up {
+    text-align: center;
     border-radius: 6px 16px;
     padding: 1rem;
     width: 420px;
@@ -31,10 +35,11 @@ html {
     margin: 1rem 2rem;
     text-shadow: 1px .5px white;
     color: black;
-    font-family: Georgia, serif;
+    font-family: monospace;
    } 
 
    .family-selector {
+    text-align: center;
     border-radius: 6px 16px;
     padding: 1rem;
     width: 420px;
@@ -46,19 +51,161 @@ html {
     margin: 1rem 2rem;
     text-shadow: .5px .5px white;
     color: black;
-    font-family: Georgia, serif;
+    font-family: monospace;
    }
 
    .card {
+    
     border-radius: 15px 40px;
     text-align: center;
-    border: grey solid 2px;
+    border: white solid 5px;
     padding: 20px;
     width: 200px;
     height: auto;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px black;
-    background-color: white;
-    font-family: Georgia, serif;
+    box-shadow: 3px 4px white;
+    background-color: rgb(214, 211, 211);
+    font-family: monospace;
   }
+
+  .chore-status {
+    text-align: center;
+    font-size: larger;
+    font-family: Georgia, serif;
+}
+   .add-chore-form {
+    text-align: center;
+    width: 80%;
+    font-family: monospace;
+}
+
+  #family-chore-list {
+    text-align: center;
+    text-shadow: 2px 2px white;
+    color: black;
+    font-family: monospace;
+    opacity: .5;
+    font-size: 28px;
+  }
+
+  #submit-form {
+    border-radius: 3px 8px;
+  }
+  .complete-btn {
+    background-color: black;
+    border-radius: 3px 8px;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .reset-chore-button {
+    background-color: #f50404;
+    border-radius: 3px 8px;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+        
+    }
+
+  .delete-chore-btn {
+    background-color: lightsteelblue;
+    border-radius: 3px 8px;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+  }
+
+  #add-new-family{
+    border-radius: 3px 8px;
+    border: grey solid 2px;
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    border: #9494b8;
+    background: whitesmoke;
+    box-shadow: 3px 4px black;
+    padding: 12px 28px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: black;
+    font-family: monospace;
+  }
+
+  #add-new-family button {
+    color: black;
+    background: whitesmoke;
+  }
+
+  #new-chore-btn {
+    text-align: center;
+    border-radius: 3px 8px;
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    border: #9494b8;
+    border: 2px;
+    background: whitesmoke;
+    box-shadow: 3px 4px black;
+    padding: 12px 28px;
+    margin-left: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: black;
+    font-family: monospace;
+  }
+
+  #all-house-options {
+    text-align: center;
+    border-radius: 3px 8px;
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    border: #9494b8;
+    border: 2px;
+    background: whitesmoke;
+    box-shadow: 3px 4px black;
+    padding: 12px 28px;
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    font-family: monospace;
+  }
+
+  #tag-line {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 24px;
+  }
+
+  #family-chore-list {
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    font-size: 30px;
+  }
+
+  
