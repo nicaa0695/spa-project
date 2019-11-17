@@ -1,0 +1,20 @@
+html {
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  body {
+      background-image: linear-gradient(to right, red, rgb(105, 2, 2));
+  }
+
+  .container {
+    box-shadow: 3px 4px rgb(2, 16, 22);
+    border-radius: 6px 16px;
+    padding: 1rem;
+    width: 420px;
+    background: white;
+    opacity: .8;
+    margin: 1rem 2rem;
+    text-shadow: 1px .5px grey;
+    color: black;
+    font-family: Georgia, serif;
+  }
