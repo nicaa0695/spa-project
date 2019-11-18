@@ -57,18 +57,18 @@ selectHouseHoldBtn.addEventListener('click', () => {
         selectForm.style.display = 'none'
     }
 })
+choreForm.addEventListener('submit', e => {
+    e.preventDefault()
+    Chore.postChore(e.target)
+})
 
 addBtn.addEventListener('click', () => {
-
-    //hide and seek feature with add new chore form
+    // hide and seek feature with add new chore form
     addChore = !addChore
     if (addChore) {
         addBtn.textContent = 'Close'
         choreForm.style.display = 'block'
-        choreForm.addEventListener('submit', e => {
-            e.preventDefault()
-            Chore.postChore(e.target)
-        })
+        
         
         
     } else {
