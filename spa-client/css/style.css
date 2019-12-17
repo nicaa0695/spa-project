@@ -1,15 +1,16 @@
 html {
     text-align: center;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
   }
 
   body {
-      background-image: linear-gradient(to right, rgb(0, 255, 170), rgb(236, 232, 232));
+      background-image: url(https://myrealdomain.com/images/black-and-white-abstract-wallpaper-1.jpg);
+      background-size: cover;
   }
 
   .container {
     text-align: center;
-    box-shadow: 3px 4px rgb(2, 16, 22);
+    box-shadow: 3px 4px #000000;
     border-radius: 6px 16px;
     padding: 1rem;
     width: 420px;
@@ -17,8 +18,8 @@ html {
     opacity: .8;
     margin: 1rem 2rem;
     text-shadow: 1px .5px white;
-    color: black;
-    font-family: monospace;
+    color: #4ed6ff;
+    font-family: 'Roboto', sans-serif;
   }
 
   #house-pop-up {
@@ -30,11 +31,11 @@ html {
     display: none;
     background: white;
     opacity: .8;
-    box-shadow: 3px 4px black;
+    box-shadow: 3px 4px #000000;
     margin: 1rem 2rem;
     text-shadow: 1px .5px white;
-    color: black;
-    font-family: monospace;
+    color: #4ed6ff;
+    font-family: 'Roboto', sans-serif;
    } 
 
    .family-selector {
@@ -46,44 +47,43 @@ html {
     display: none;
     background: white;
     opacity: .8;
-    box-shadow: 3px 4px black;
+    box-shadow: 3px 4px #000000;
     margin: 1rem 2rem;
     text-shadow: .5px .5px white;
-    color: black;
-    font-family: monospace;
+    color: #4ed6ff;
+    font-family: 'Roboto', sans-serif;
    }
 
    .card {
     border-radius: 15px 40px;
     text-align: center;
-    border: white solid 5px;
+    border: rgb(160, 160, 160) solid 5px;
     padding: 20px;
     width: 200px;
     height: auto;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px white;
-    background-color: rgb(214, 211, 211);
-    font-family: monospace;
+    box-shadow: 3px 4px#000000;
+    background-color: #3ad1ff;
+    color: black;
+    font-family: 'Roboto', sans-serif;
   }
 
   .chore-status {
     text-align: center;
     font-size: larger;
-    font-family: Georgia, serif;
+    font-family: 'Roboto', sans-serif;
 }
    .add-chore-form {
     text-align: center;
     width: 80%;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
   #family-chore-list {
     text-align: center;
     text-shadow: 2px 2px white;
-    color: black;
-    font-family: monospace;
-    opacity: .5;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
   }
 
@@ -141,18 +141,18 @@ html {
     width: auto;
     border: #9494b8;
     background: whitesmoke;
-    box-shadow: 3px 4px black;
+    box-shadow: 3px 4px #000000;
     padding: 12px 28px;
     margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 30px;
     cursor: pointer;
-    color: black;
-    font-family: monospace;
+    color: #4ed6ff;
+    font-family: 'Roboto', sans-serif;
   }
 
   #add-new-family button {
-    color: black;
+    color: #4ed6ff;
     background: whitesmoke;
   }
 
@@ -165,13 +165,13 @@ html {
     border: #9494b8;
     border: 2px;
     background: whitesmoke;
-    box-shadow: 3px 4px black;
+    box-shadow: 3px 4px #000000;
     padding: 12px 28px;
     margin-left: 50px;
     margin-top: 15px;
     cursor: pointer;
-    color: black;
-    font-family: monospace;
+    color: #4ed6ff;
+    font-family: 'Roboto', sans-serif;
   }
 
   #all-house-options {
@@ -180,30 +180,46 @@ html {
     font-size: 24px;
     height: auto;
     width: auto;
-    border: #9494b8;
+    border: #4ed6ff;
     border: 2px;
     background: whitesmoke;
-    box-shadow: 3px 4px black;
+    box-shadow: 3px 4px #000000;
     padding: 12px 28px;
     margin-left: 50px;
     margin-top: 20px;
     cursor: pointer;
-    color: black;
-    font-family: monospace;
+    color: #4ed6ff;
+    font-family: 'Roboto', sans-serif;
   }
 
   #tag-line {
     text-align: center;
     color: white;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
   }
 
   #family-chore-list {
     text-align: center;
-    color: black;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
+  }
+
+  #chore-organizer-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  #tag-line {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+  }
+
+  #family-chore-list {
+    color: black
   }
 
   
